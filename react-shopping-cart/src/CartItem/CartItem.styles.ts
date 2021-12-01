@@ -19,7 +19,11 @@ export const Wrapper = styled.div`
   .buttons {
     display: flex;
     height: 50px;
-    margin: 20px;
+  }
+
+  Button {
+    border-radius: 0px;
+    margin:5px;
   }
 
   img {
