@@ -78,6 +78,7 @@ const App = () => {
 
   return (
     <Wrapper>
+      <h1 style={{textAlign:"center"}}>Shopping Mart</h1>
       <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
         <Cart
           cartItems={cartItems}
@@ -92,7 +93,7 @@ const App = () => {
       </StyledButton>
       <Grid container spacing={3}>
         {data?.map((item) => (
-          <Grid item key={item.id} xs={12} sm={4}>
+          <Grid item key={item.id} xs={8} sm={3}>
             <Item item={item} handleAddToCart={handleAddToCart} />
           </Grid>
         ))}

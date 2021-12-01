@@ -16,6 +16,12 @@ export const Wrapper = styled.div`
     justify-content: space-between;
   }
 
+  .buttons {
+    display: flex;
+    height: 50px;
+    margin: 20px;
+  }
+
   img {
     max-width: 80px;
     object-fit: cover;
